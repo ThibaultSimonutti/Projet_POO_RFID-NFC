@@ -1,9 +1,9 @@
 #Avancement des différentes parties
 
 - [x] Introduction  
-- [ ] Les  modes de fonctionnement  
+- [x] Les  modes de fonctionnement  
     - [x] explications  
-    - [ ] schemas 
+    - [x] schemas 
 - [ ] Appareillage Bluetooth  
 	- [x] explications
 	- [ ] schemas
