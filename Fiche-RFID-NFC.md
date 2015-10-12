@@ -17,3 +17,7 @@ Le NFC dispose de trois modes de fonctionnement :
 ### Fonctionnement d'un appareillage bluetooth
 
 La technologie NFC permet donc par exemple d'appareiller simplement deux appareils. Le tag NFC contenue dans l'appreil bluetooth va transmettre son identifiant unique à l'appareil ce qui évite de le selectionner manuellement, ensuite les données d'authentification sécurisant la transmission, il n'est donc plus nécéssaire de saisir un code ni l'appareil a appairer.
+
+
+
+### Application android
