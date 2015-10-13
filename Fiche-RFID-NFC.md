@@ -8,11 +8,12 @@ La technologie RFID (Radio Frequency Identification) et NFC (Near Field Communic
   - Paiement sans contact pour les téléphones ou cartes bancaires
 
 Le NFC dispose de 3 vitesses de communication différentes :
-  * 106 kbits/s
-  * 212 kbits/s
-  * 424 kbits/s
   
-  Si on compare le RFID et le NFC aux autres technologies sans fil en fonction de la portée et de la distance,
+* 106 kbits/s
+* 212 kbits/s
+* 424 kbits/s
+  
+Si on compare le RFID et le NFC aux autres technologies sans fil en fonction de la portée et de la distance,
   on obtient le diagramme suivant :
   ![alt text](Images/Diagramme_Situation_RFID_NFC.png "Diagramme")
 
