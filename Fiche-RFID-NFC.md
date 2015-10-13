@@ -1,11 +1,21 @@
 # Technologie RFID et NFC
 
 La technologie RFID (Radio Frequency Identification) et NFC (Near Field Communication) sont des technologies
- similaires utilisées pour faire de la communication sans fil sur de courte portée.
+ similaires utilisées pour faire de la communication sans fil sur de courte portée en utilisant des ondes radio haute
+ fréquence (13.56 MHz).
 
   - Utilisation d'une puce RFID en tant que puce d'identification (sous-cutanée)
   - Utilisation de tag NFC pour récuperer une image ou un plan
   - Paiement sans contact pour les téléphones ou cartes bancaires
+
+  Le NFC dispose de 3 vitesses de communication différentes :
+  * 106 kbits/s
+  * 212 kbits/s
+  * 424 kbits/s
+  
+  Si on compare le RFID et le NFC aux autres technologies sans fil en fonction de la portée et de la distance,
+  on obtient le diagramme suivant :
+  ![alt text](Images/Diagramme_Situation_RFID_NFC.png "Diagramme"
 
 ### Les 3 modes de fonctionnement entre deux dispositifs NFC
 
