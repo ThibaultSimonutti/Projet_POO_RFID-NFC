@@ -87,6 +87,20 @@ Il existe plusieurs applications et services autour de la technologie NFC. Parmi
 - Identification des produits pour un passage en caisse plus rapide (plus besoin de chercher le code barre)
 
 
-
 ### Quelles sont les sécurités mises en place afin de protéger mes données ?
 
+### Utilisation de lecteur/graveur sous linux
+
+ Il existe des bibliothèques pour pouvoir utiliser différents lecteurs graveurs sous linux, on peut prendre l'exemple de nfcpy, qui est une bibliothèque écrite en python permettant d'utiliser plusieurs appareils pour les technologies nfc et rfid, le majeurs inconvéniant est le nombre restreint d'appareils compatibles (une dizaine d'appareils seulement).
+
+### Utilisation de la carte Explore 14 par NXP
+
+#### Première application
+
+  La première application consiste à utiliser notre carte NXP pour lire différents types de tags, pour ce faire, on réalise un programme python qui va lire en boucle l'uid des cartes.
+
+#### Bibliothèques à disposition
+
+Les bibliothèques suivantes sont disponibles pour une utilisation de la carte NXP
+ * nxppy : qui est une bibliothèque codée en python et qui permet de lire et d'écrire des tags NFC
+ * nxp reader library : qui est une bibliothèque écrite en C par NXP et qui permet d'utiliser touts les modes de fonctionnement de la carte
