@@ -32,7 +32,7 @@ Le NFC dispose de trois modes de fonctionnement :
 donc passif, cela nécéssite par contre une source d'énergie car les appareils utilisent généralement
  d'autre fonctionnalités (écran,applications, communication interne), contrairement à un tag NFC par exemple
  qui lui tire son énergie du champs émis par l'intérogateur.
- ![alt text](Images/mode_emulation_carte.png "Emulation de carte")
+  ![alt text](Images/mode_emulation_carte.png "Emulation de carte")
  
 * Le mode lecteur : l'appareil se compte comme un lecteur de carte sans contac. Il initie la 
 communication en émettant un champ magnétique puis en envoyany une commande à la cible. La cible répond
@@ -43,7 +43,7 @@ communication en émettant un champ magnétique puis en envoyany une commande à
 de performance. Les appareils émettent des informations tours à tours. Ce mode de communication est plus lent 
 du à l'utilisation d'un protocol plus lourd permettant de répartir les rôles entre les deux appareils NFC. 
 C'est un mode qui peut servir à appairer des passerelles avec d'autres technologies (bluetooth par exemple).
- ![alt text](Images/mode_peertopeer.png "Mode Peer To Peer")
+  ![alt text](Images/mode_peertopeer.png "Mode Peer To Peer")
 
 
 Le NFC dispose de 3 vitesses de communication différentes liés directement avec le mode de fonctionnement :
@@ -56,12 +56,12 @@ Le NFC dispose de 3 vitesses de communication différentes liés directement ave
 
 La technologie NFC permet donc par exemple d'appareiller simplement deux appareils. Le tag NFC contenue dans 
 l'appareil bluetooth va transmettre son identifiant unique à l'appareil ce qui évite de le selectionner manuellement,
- ensuite les données d'authentification sécurisant la transmission, il n'est donc plus nécéssaire de saisir un code ni
- l'appareil a appairer.
+ ensuite les données d'authentification sécurisant la transmission, toutes ces données sont utilisées par le téléphone pour établir la connexion de manière rapide et éfficace, il n'est donc plus nécéssaire de saisir un code ni l'appareil a appairer.
 
 
 
 ### Application android
+ Il éxiste de nombreuses applications android permettant de lire, d'écrire, ou de vérouiller des tags NFC, parmis les plus utilisées, on retrouve une application NXP, qui permet d'utiliser toutes les fonctions NFC possible avec un smartphone (Automatisation d'action, vérouillage de tag, lecture, écriture).
 
 ### Applications du NFC déjà existante
 - Accès aux transports publics
@@ -93,14 +93,23 @@ Il existe plusieurs applications et services autour de la technologie NFC. Parmi
 
  Il existe des bibliothèques pour pouvoir utiliser différents lecteurs graveurs sous linux, on peut prendre l'exemple de nfcpy, qui est une bibliothèque écrite en python permettant d'utiliser plusieurs appareils pour les technologies nfc et rfid, le majeurs inconvéniant est le nombre restreint d'appareils compatibles (une dizaine d'appareils seulement).
 
-### Utilisation de la carte Explore 14 par NXP
+### Utilisation de la carte Explore 14 par NXP avec la bibliothèque nxppy
 
 #### Première application
 
-  La première application consiste à utiliser notre carte NXP pour lire différents types de tags, pour ce faire, on réalise un programme python qui va lire en boucle l'uid des cartes.
+  La première application consiste à utiliser notre carte NXP pour lire différents types de tags, pour ce faire, on réalise un programme python qui va lire en boucle et nous afficher l'uid des cartes.
+  
+
+#### Seconde Application
+
+ La seconde application consiste à utiliser notre carte NXP pour écrire sur la carte NFC Mifare fourni. Il est possible d'écrire sur la carte, celle-ci est composée de plusieurs bloques, chacun ayant une capacité de 4 octets. Pour aller lire les données que l'on vient de mettre dans la carte, il faudra ensuite aller lire les bloque sur lesquels nous avons insérer les données.
 
 #### Bibliothèques à disposition
 
 Les bibliothèques suivantes sont disponibles pour une utilisation de la carte NXP
  * nxppy : qui est une bibliothèque codée en python et qui permet de lire et d'écrire des tags NFC
  * nxp reader library : qui est une bibliothèque écrite en C par NXP et qui permet d'utiliser touts les modes de fonctionnement de la carte
+ 
+ Il éxiste également d'autre bibliothèques pour l'utilisation du NFC sous linux, celles que nous allons vous présenter sont libre :
+ * nfcpy : qui est une bibliothqèe python permettant d'utiliser des lecteurs/graveurs USB sous linux, une dizaine de produits sont compatible avec nfcpy, mais aucun ne permet d'utiliser toutes les fonctions NFC.
+ * libnfc : qui est une bibliothqèe C qui permet l'utilisation de dongle NFC sous linux, windows, et Mac OS X, tout comme nfcpy, une dizaine de dongle USB peuvent être utilisé mais aucun dongle ne dispose de toutes les fonctionnalités possibles
