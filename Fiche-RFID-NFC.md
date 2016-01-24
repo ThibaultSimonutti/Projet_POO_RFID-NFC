@@ -101,7 +101,6 @@ Il existe plusieurs applications et services autour de la technologie NFC. Parmi
 #### Première application
 
   La première application consiste à utiliser notre carte NXP pour lire différents types de tags, pour ce faire, on réalise un programme python qui va lire en boucle et nous afficher l'uid des cartes.
-  
 
 #### Seconde Application
 
@@ -113,6 +112,6 @@ Les bibliothèques suivantes sont disponibles pour une utilisation de la carte N
  * nxppy : qui est une bibliothèque codée en python et qui permet de lire et d'écrire des tags NFC
  * nxp reader library : qui est une bibliothèque écrite en C par NXP et qui permet d'utiliser touts les modes de fonctionnement de la carte
  
- Il éxiste également d'autre bibliothèques pour l'utilisation du NFC sous linux, celles que nous allons vous présenter sont libre :
+Il éxiste également d'autre bibliothèques pour l'utilisation du NFC sous linux, celles que nous allons vous présenter sont libre :
  * nfcpy : qui est une bibliothqèe python permettant d'utiliser des lecteurs/graveurs USB sous linux, une dizaine de produits sont compatible avec nfcpy, mais aucun ne permet d'utiliser toutes les fonctions NFC.
  * libnfc : qui est une bibliothqèe C qui permet l'utilisation de dongle NFC sous linux, windows, et Mac OS X, tout comme nfcpy, une dizaine de dongle USB peuvent être utilisé mais aucun dongle ne dispose de toutes les fonctionnalités possibles
