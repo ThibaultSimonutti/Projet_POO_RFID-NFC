@@ -32,17 +32,20 @@ Le NFC dispose de trois modes de fonctionnement :
 donc passif, cela nécéssite par contre une source d'énergie car les appareils utilisent généralement
  d'autre fonctionnalités (écran,applications, communication interne), contrairement à un tag NFC par exemple
  qui lui tire son énergie du champs émis par l'intérogateur.
+
  ![alt text](Images/mode_emulation_carte.png "Emulation de carte")
  
 * Le mode lecteur : l'appareil se compte comme un lecteur de carte sans contac. Il initie la 
 communication en émettant un champ magnétique puis en envoyany une commande à la cible. La cible répond
  par rétro-modulation de l'onde incidente (envoyé par le lecteur)
+
  ![alt text](Images/mode_lecteur.png "Mode Lecteur")
  
 * Mode Peer-to-Peer : Ce mode permet d'échanger des informations entre deux dispositifs NFC de mêmes niveaux 
 de performance. Les appareils émettent des informations tours à tours. Ce mode de communication est plus lent 
 du à l'utilisation d'un protocol plus lourd permettant de répartir les rôles entre les deux appareils NFC. 
 C'est un mode qui peut servir à appairer des passerelles avec d'autres technologies (bluetooth par exemple).
+
  ![alt text](Images/mode_peertopeer.png "Mode Peer To Peer")
 
 
